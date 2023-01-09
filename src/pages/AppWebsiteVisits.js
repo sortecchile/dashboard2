@@ -27,7 +27,7 @@ import "./AppWebsiteVisits.css";
 export default function DashboardAppPage() {
   const { setTitleOnNav } = React.useContext(TitleTracker);
   React.useLayoutEffect(() => {
-    setTitleOnNav("Your panel");
+    setTitleOnNav("Tu panel");
   }, []);
 
   return (
@@ -57,7 +57,7 @@ export default function DashboardAppPage() {
                 variant="h5"
                 sx={{ color: "#A0A3B4", fontWeight: "lighter" }}
               >
-                Crop Day
+                Día del cultivo
               </Typography>
               <Typography variant="h2">120</Typography>
             </Paper>
@@ -82,10 +82,10 @@ export default function DashboardAppPage() {
                 variant="h5"
                 sx={{ color: "#A0A3B4", fontWeight: "lighter" }}
               >
-                Crop Day
+                F. a aplicar
               </Typography>
               <Typography variant="h2">
-                120 <span style={{ fontSize: 14 }}>ppm/ha</span>
+                74 <span style={{ fontSize: 14 }}>ppm/ha</span>
               </Typography>
             </Paper>
           </Grid>
@@ -110,7 +110,7 @@ export default function DashboardAppPage() {
                 variant="h5"
                 sx={{ color: "#A0A3B4", fontWeight: "lighter" }}
               >
-                Crop Day
+                F. aplicado
               </Typography>
               <Typography variant="h2">
                 12 <span style={{ fontSize: 14 }}>ppm/ha</span>
@@ -138,7 +138,7 @@ export default function DashboardAppPage() {
                 variant="h5"
                 sx={{ color: "#A0A3B4", fontWeight: "lighter" }}
               >
-                Average moisturizer
+                Average moisture
               </Typography>
               <Typography variant="h2">64 %</Typography>
             </Paper>
@@ -146,8 +146,8 @@ export default function DashboardAppPage() {
 
           <Grid item xs={12} md={12} lg={12}>
             <NPKVariationsGraph
-              title="NPK variations"
-              subheader="Last 120 days"
+              title="Variaciones NPK"
+              subheader="Ultimos 120 días"
               chartLabels={[
                 "01/01/2003",
                 "02/01/2003",
@@ -163,19 +163,19 @@ export default function DashboardAppPage() {
               ]}
               chartData={[
                 {
-                  name: "Nitrogen",
+                  name: "Nitrógeno",
                   type: "area",
                   fill: "gradient",
                   data: [23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30],
                 },
                 {
-                  name: "Phosphorous",
+                  name: "Fósforo",
                   type: "area",
                   fill: "gradient",
                   data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43],
                 },
                 {
-                  name: "Potassium",
+                  name: "Potasio",
                   type: "line",
                   fill: "solid",
                   data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39],
@@ -225,14 +225,14 @@ export default function DashboardAppPage() {
                   {" "}
                   <div style={{ marginTop: "-7px" }}>
                     <p style={{ fontSize: "22px", fontWeight: "bold" }}>
-                      Fertilizer Plan
+                      Plan de fertilización
                     </p>
                   </div>
                   <p
                     color="primary"
                     style={{ fontSize: "18px", color: "blue" }}
                   >
-                    View Details
+                    Ver Detalles
                   </p>
                 </Box>
                 <Box my={4} />

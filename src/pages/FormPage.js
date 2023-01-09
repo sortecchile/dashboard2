@@ -108,9 +108,9 @@ const FormPage = () => {
               <Typography sx={{ color: "#A0A3B4", marginLeft: "2.8%" }}>
                 Detalles del análisis de suelo
               </Typography>
-              <Typography sx={{ color: "#A0A3B4" }}>Customer name</Typography>
-              <Typography sx={{ color: "#A0A3B4" }}>Date</Typography>
-              <Typography sx={{ color: "#A0A3B4" }}>Priority</Typography>
+              <Typography sx={{ color: "#A0A3B4" }}>Nombre del campo</Typography>
+              <Typography sx={{ color: "#A0A3B4" }}>Fecha</Typography>
+              <Typography sx={{ color: "#A0A3B4" }}>Prioridad</Typography>
             </Box>
           </Grid>
           <Box style={{ paddingLeft: "20p", width: "100%" }}>
@@ -118,10 +118,10 @@ const FormPage = () => {
           </Box>
           <Grid item xs={12} sm={12} md={6} lg={6}>
             <Box style={{ margin: "0 0 0 4%" }}>
-              <p>Detalles del análisis de suelo</p>
+              <p>Nombre del cultivo</p>
               <TextField
                 id="filled-basic"
-                label="Filled"
+                label="Concha y Toro"
                 variant="filled"
                 sx={{ width: "80%" }}
               />
@@ -133,7 +133,7 @@ const FormPage = () => {
               <p>Tipo de suelo</p>
               <TextField
                 id="filled-basic"
-                label="Filled"
+                label="Arenoso"
                 variant="filled"
                 sx={{ width: "80%" }}
               />
@@ -145,10 +145,10 @@ const FormPage = () => {
 
           <Grid item xs={12} sm={12} md={6} lg={6}>
             <Box style={{ margin: "0 4%" }}>
-              <p>PH</p>
+              <p>Resultado del análisis</p>
               <TextField
                 id="filled-basic"
-                label="Filled"
+                label="0"
                 variant="filled"
                 sx={{ width: "80%" }}
               />
@@ -170,52 +170,51 @@ const FormPage = () => {
           {/* row 1 */}
           <Grid container component={Box} width={"96%"} ml={6}>
             <Grid item xs={12} sm={12} md={4} lg={4}>
-              <p style={{ paddingLeft: "8px" }}>He</p>
+              <p style={{ paddingLeft: "8px" }}>Nutriente</p>
               <FormControl sx={{ m: 1, minWidth: "80%" }} size="medium">
-                <InputLabel id="demo-select-small">Age</InputLabel>
+                <InputLabel id="demo-select-small">N</InputLabel>
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
                   value={age}
-                  label="Age"
+                  label="Nutriente"
                   onChange={handleChange}
                 >
                   <MenuItem value="">
                     <em>None</em>
                   </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value={10}>N</MenuItem>
+                  <MenuItem value={20}>P</MenuItem>
+                  <MenuItem value={30}>K</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
 
             <Grid item xs={12} sm={12} md={4} lg={4}>
-              <p style={{ paddingLeft: "8px" }}>He</p>
+              <p style={{ paddingLeft: "8px" }}>Unidad</p>
               <FormControl sx={{ m: 1, minWidth: "80%" }} size="medium">
-                <InputLabel id="demo-select-small">Age</InputLabel>
+                <InputLabel id="demo-select-small">PPM</InputLabel>
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
                   value={age}
-                  label="Age"
+                  label="Nutriente"
                   onChange={handleChange}
                 >
                   <MenuItem value="">
                     <em>None</em>
                   </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value={10}>PPM</MenuItem>
+                  <MenuItem value={20}>KG</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
 
             <Grid item xs={12} sm={12} md={4} lg={4}>
-              <p>PH</p>
+              <p>Resultado del análisis</p>
               <TextField
                 id="filled-basic"
-                label="Filled"
+                label="0"
                 variant="filled"
                 sx={{ width: "80%" }}
               />
@@ -223,156 +222,149 @@ const FormPage = () => {
 
             {/* row 2 */}
             <Grid item xs={12} sm={12} md={4} lg={4}>
-              <p style={{ paddingLeft: "8px" }}>He</p>
+              <p style={{ paddingLeft: "8px" }}>Nutriente</p>
               <FormControl sx={{ m: 1, minWidth: "80%" }} size="medium">
-                <InputLabel id="demo-select-small">Age</InputLabel>
+                <InputLabel id="demo-select-small">N</InputLabel>
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
                   value={age}
-                  label="Age"
+                  label="Nutriente"
                   onChange={handleChange}
                 >
                   <MenuItem value="">
                     <em>None</em>
                   </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value={10}>N</MenuItem>
+                  <MenuItem value={20}>P</MenuItem>
+                  <MenuItem value={30}>K</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
-
             <Grid item xs={12} sm={12} md={4} lg={4}>
-              <p style={{ paddingLeft: "8px" }}>He</p>
+              <p style={{ paddingLeft: "8px" }}>Unidad</p>
               <FormControl sx={{ m: 1, minWidth: "80%" }} size="medium">
-                <InputLabel id="demo-select-small">Age</InputLabel>
+                <InputLabel id="demo-select-small">PPM</InputLabel>
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
                   value={age}
-                  label="Age"
+                  label="Nutriente"
                   onChange={handleChange}
                 >
                   <MenuItem value="">
                     <em>None</em>
                   </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value={10}>PPM</MenuItem>
+                  <MenuItem value={20}>KG</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
 
             <Grid item xs={12} sm={12} md={4} lg={4}>
-              <p>PH</p>
+              <p>Resultado del análisis</p>
               <TextField
                 id="filled-basic"
-                label="Filled"
+                label="0"
                 variant="filled"
                 sx={{ width: "80%" }}
               />
             </Grid>
             {/* row 3 */}
             <Grid item xs={12} sm={12} md={4} lg={4}>
-              <p style={{ paddingLeft: "8px" }}>He</p>
+              <p style={{ paddingLeft: "8px" }}>Nutriente</p>
               <FormControl sx={{ m: 1, minWidth: "80%" }} size="medium">
-                <InputLabel id="demo-select-small">Age</InputLabel>
+                <InputLabel id="demo-select-small">N</InputLabel>
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
                   value={age}
-                  label="Age"
+                  label="Nutriente"
                   onChange={handleChange}
                 >
                   <MenuItem value="">
                     <em>None</em>
                   </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value={10}>N</MenuItem>
+                  <MenuItem value={20}>P</MenuItem>
+                  <MenuItem value={30}>K</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
-
             <Grid item xs={12} sm={12} md={4} lg={4}>
-              <p style={{ paddingLeft: "8px" }}>He</p>
+              <p style={{ paddingLeft: "8px" }}>Unidad</p>
               <FormControl sx={{ m: 1, minWidth: "80%" }} size="medium">
-                <InputLabel id="demo-select-small">Age</InputLabel>
+                <InputLabel id="demo-select-small">PPM</InputLabel>
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
                   value={age}
-                  label="Age"
+                  label="Nutriente"
                   onChange={handleChange}
                 >
                   <MenuItem value="">
                     <em>None</em>
                   </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value={10}>PPM</MenuItem>
+                  <MenuItem value={20}>KG</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
 
             <Grid item xs={12} sm={12} md={4} lg={4}>
-              <p>PH</p>
+              <p>Resultado del Análisis</p>
               <TextField
                 id="filled-basic"
-                label="Filled"
+                label="0"
                 variant="filled"
                 sx={{ width: "80%" }}
               />
             </Grid>
 
             <Grid item xs={12} sm={12} md={4} lg={4}>
-              <p style={{ paddingLeft: "8px" }}>He</p>
+              <p style={{ paddingLeft: "8px" }}>Nutriente</p>
               <FormControl sx={{ m: 1, minWidth: "80%" }} size="medium">
-                <InputLabel id="demo-select-small">Age</InputLabel>
+                <InputLabel id="demo-select-small">N</InputLabel>
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
                   value={age}
-                  label="Age"
+                  label="Nutriente"
                   onChange={handleChange}
                 >
                   <MenuItem value="">
                     <em>None</em>
                   </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value={10}>N</MenuItem>
+                  <MenuItem value={20}>P</MenuItem>
+                  <MenuItem value={30}>K</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
-
             <Grid item xs={12} sm={12} md={4} lg={4}>
-              <p style={{ paddingLeft: "8px" }}>He</p>
+              <p style={{ paddingLeft: "8px" }}>Unidad</p>
               <FormControl sx={{ m: 1, minWidth: "80%" }} size="medium">
-                <InputLabel id="demo-select-small">Age</InputLabel>
+                <InputLabel id="demo-select-small">PPM</InputLabel>
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
                   value={age}
-                  label="Age"
+                  label="Nutriente"
                   onChange={handleChange}
                 >
                   <MenuItem value="">
                     <em>None</em>
                   </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value={10}>PPM</MenuItem>
+                  <MenuItem value={20}>KG</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
-
             <Grid item xs={12} sm={12} md={4} lg={4} component={Box} mb={5}>
-              <p>PH</p>
+              <p>Resultado del análisis</p>
               <TextField
                 id="filled-basic"
-                label="Filled"
+                label="0"
                 variant="filled"
                 sx={{ width: "80%" }}
               />
