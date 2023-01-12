@@ -228,7 +228,7 @@ const ProgamDeFertilizer2 = () => {
         </table>
 
         <Box textAlign={"right"} marginTop={5}>
-          <Button
+          {/* <Button
             variant="contained"
             sx={{
               width: "25%",
@@ -240,7 +240,7 @@ const ProgamDeFertilizer2 = () => {
           >
             Configuración Manual
           </Button>
-          <br />
+          <br /> */}
           <Button
             variant="contained"
             sx={{
@@ -249,6 +249,7 @@ const ProgamDeFertilizer2 = () => {
               p:2,
               "&:hover": { background: "rgba(0,72,217,0.45)", color: "white",p:2 },
             }}
+            href="/dashboard/ProgamDeFertilizer3"
           >
             Configuración Manual
           </Button>

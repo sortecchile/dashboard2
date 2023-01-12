@@ -11,50 +11,50 @@ const navConfig = [
     path: '/dashboard/app',
     icon: icon('ic_analytics'),
   },
+  // {
+  //   title: 'Análisis de nutrientes',
+  //   path: '/dashboard/user',
+  //   icon: icon('ic_bulb'),
+  // },
+  // {
+  //   title: 'ComboPlusGooglemap',
+  //   path: '/dashboard/ComboPlusGooglemap',
+  //   icon: icon('text'),
+  // },
   {
-    title: 'Análisis de nutrientes',
-    path: '/dashboard/user',
-    icon: icon('ic_bulb'),
-  },
-  {
-    title: 'ComboPlusGooglemap',
-    path: '/dashboard/ComboPlusGooglemap',
-    icon: icon('text'),
-  },
-  {
-    title: 'FormPage',
+    title: 'Análisis de Nutrientes',
     path: '/dashboard/FormPage',  //all these paths must be same in route.js
     icon: icon('icon3'),
   },
   {
-    title: 'ProgamDeFertilizer',
+    title: 'Programa de fertilización',
     path: '/dashboard/ProgamDeFertilizer',
     icon: icon('icon4'),
   },
-  {
-    title: 'Modal1',
-    path: '/dashboard/Modal1',
-    icon: icon('icon5'),
-  },
-  {
-    title: 'Modal2',
-    path: '/dashboard/Modal2',
-    icon: icon('icon6'),
-  },
-  
-  {
-    title: 'ProgamDeFertilizer2',
-    path: '/dashboard/ProgamDeFertilizer2',
-    icon: icon('icon7'),
-  },
-  {
-    title: 'ProgamDeFertilizer3',
-    path: '/dashboard/ProgamDeFertilizer3',
-    icon: icon('ic_blog'),
-  },
+  // {
+  //   title: 'Modal1',
+  //   path: '/dashboard/Modal1',
+  //   icon: icon('icon5'),
+  // },
+  // {
+  //   title: 'Modal2',
+  //   path: '/dashboard/Modal2',
+  //   icon: icon('icon6'),
+  // },
+
+  // {
+  //   title: 'ProgamDeFertilizer2',
+  //   path: '/dashboard/ProgamDeFertilizer2',
+  //   icon: icon('icon7'),
+  // },
+  // {
+  //   title: 'ProgamDeFertilizer3',
+  //   path: '/dashboard/ProgamDeFertilizer3',
+  //   icon: icon('ic_blog'),
+  // },
 
   {
-    title: 'login',
+    title: 'Salir',
     path: '/login',
     icon: icon('ic_lock'),
   },

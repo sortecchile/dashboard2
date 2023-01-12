@@ -41,7 +41,7 @@ const ProgamDeFertilizer3 = () => {
             <IconButton aria-label="Example">
               <Typography variant="button">Sort</Typography> <FilterListIcon />
             </IconButton>
-          
+
             <IconButton aria-label="Example">
               <Typography variant="button">Filter</Typography>{" "}
               <FilterAltOutlinedIcon />
@@ -147,6 +147,7 @@ const ProgamDeFertilizer3 = () => {
               p:2,
               "&:hover": { background: "rgba(0,72,217,0.45)", color: "white",p:2 },
             }}
+            href="/dashboard/ProgamDeFertilizer"
           >
             Completar calendario de fertilización
           </Button>

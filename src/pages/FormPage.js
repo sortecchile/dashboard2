@@ -123,6 +123,7 @@ const FormPage = () => {
                 id="filled-basic"
                 label="Concha y Toro"
                 variant="filled"
+                defaultValue={"Concha y toro"}
                 sx={{ width: "80%" }}
               />
             </Box>

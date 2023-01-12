@@ -70,7 +70,8 @@ function Modal1() {
                         height: "44px",
                       },
                     }}
-                    placeholder="Buyer"
+                    defaultValue="Bayer"
+                    placeholder="Bayer"
                   />
                 </InputResponsive>
 
@@ -91,6 +92,7 @@ function Modal1() {
                     },
                   }}
                   size="large"
+                  href="/dashboard/Modal2"
                 >
                   Continuar
                 </Button>

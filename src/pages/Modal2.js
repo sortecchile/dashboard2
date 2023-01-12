@@ -70,7 +70,8 @@ function Modal2() {
                         height: "44px",
                       },
                     }}
-                    placeholder="Urea 48%"
+                    placeholder="Urea 46%"
+                    defaultValue={"Urea 46%"}
                   />
                 </InputResponsive>
 
@@ -90,6 +91,7 @@ function Modal2() {
                     },
                   }}
                   size="large"
+                  href="/dashboard/ProgamDeFertilizer2"
                 >
                   Continuar
                 </Button>
