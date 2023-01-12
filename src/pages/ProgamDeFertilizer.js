@@ -1,8 +1,10 @@
 import React from "react";
 import { Box, Button, Grid, Paper, Typography } from "@mui/material";
 import "./ProgramDeFertilzer.css";
+import { useNavigate } from "react-router-dom";
 
 const ProgamDeFertilizer = () => {
+  const navigate = useNavigate()
   const HorizonaLine = (
     <hr
       style={{
@@ -204,7 +206,7 @@ const ProgamDeFertilizer = () => {
               p:2,
               "&:hover": { background: "rgba(0,72,217,0.45)", color: "white",p:2},
             }}
-            href="/dashboard/Modal1"
+            onClick={() => { navigate("/dashboard/Modal1") }}
           >
             Completar calendario fertilización
           </Button>

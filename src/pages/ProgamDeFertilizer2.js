@@ -10,8 +10,10 @@ import {
 import FilterListIcon from "@mui/icons-material/FilterList";
 import FilterAltOutlinedIcon from "@mui/icons-material/FilterAltOutlined";
 import "./ProgramDeFertilzer.css";
+import { useNavigate } from "react-router-dom";
 
 const ProgamDeFertilizer2 = () => {
+  const navigate = useNavigate();
   const HorizonaLine = (
     <hr
       style={{
@@ -249,7 +251,7 @@ const ProgamDeFertilizer2 = () => {
               p:2,
               "&:hover": { background: "rgba(0,72,217,0.45)", color: "white",p:2 },
             }}
-            href="/dashboard/ProgamDeFertilizer3"
+            onClick={() => { navigate("/dashboard/ProgamDeFertilizer3") }}
           >
             Configuración Manual
           </Button>

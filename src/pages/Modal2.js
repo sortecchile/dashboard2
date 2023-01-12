@@ -11,6 +11,7 @@ import {
 import CloseIcon from "@mui/icons-material/Close";
 import "./Modal1.css";
 import { styled } from "@mui/system";
+import { useNavigate } from "react-router-dom";
 const style = {
   width: "80%",
   hieght: "800px",
@@ -22,6 +23,7 @@ const style = {
   border: "1px solid lightgray",
 };
 function Modal2() {
+  const navigate = useNavigate();
   const [open, setOpen] = React.useState(true);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -91,7 +93,7 @@ function Modal2() {
                     },
                   }}
                   size="large"
-                  href="/dashboard/ProgamDeFertilizer2"
+                  onClick={() => { navigate("/dashboard/ProgamDeFertilizer2") }}
                 >
                   Continuar
                 </Button>

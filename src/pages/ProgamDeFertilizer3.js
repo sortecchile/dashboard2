@@ -10,8 +10,10 @@ import {
 import FilterListIcon from "@mui/icons-material/FilterList";
 import FilterAltOutlinedIcon from "@mui/icons-material/FilterAltOutlined";
 import "./ProgramDeFertilzer.css";
+import { useNavigate } from "react-router-dom";
 
 const ProgamDeFertilizer3 = () => {
+  const navigate = useNavigate()
   const HorizonaLine = (
     <hr
       style={{
@@ -147,7 +149,7 @@ const ProgamDeFertilizer3 = () => {
               p:2,
               "&:hover": { background: "rgba(0,72,217,0.45)", color: "white",p:2 },
             }}
-            href="/dashboard/ProgamDeFertilizer"
+            onClick={() => { navigate("/dashboard/ProgamDeFertilizer") }}
           >
             Completar calendario de fertilización
           </Button>

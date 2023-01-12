@@ -11,6 +11,7 @@ import {
 import CloseIcon from "@mui/icons-material/Close";
 import "./Modal1.css";
 import { styled } from "@mui/system";
+import { useNavigate } from "react-router-dom";
 const style = {
   width: "80%",
   hieght: "800px",
@@ -22,6 +23,7 @@ const style = {
   border: "1px solid lightgray",
 };
 function Modal1() {
+  const navigate = useNavigate()
   const [open, setOpen] = React.useState(true);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -92,7 +94,7 @@ function Modal1() {
                     },
                   }}
                   size="large"
-                  href="/dashboard/Modal2"
+                  onClick={() => { navigate("/dashboard/Modal2") }}
                 >
                   Continuar
                 </Button>
